@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Comfortaa,cursive;
+}
+
+.header{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    top: 0%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background: url('https://cdn.hipwallpaper.com/i/13/93/qJKcV8.jpg');
+    background-size: cover;
+}
+
+.header h1{
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aqua;
+}
+
+.links{
+    position: absolute;
+    top:65%;
+    left: 15%;
+    padding: 25px 32px;
+    background: transparent;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 40px;
+    padding: 0 50px;
+    color: #ffffff;
+    border-right: 2px solid black;
+    transition: .5s;
+}
+
+.links a:hover{
+    color: black;
+}
+
+marquee{
+    font-size: 30px;
+    color: white;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    background: grey;
+    position: absolute;
+    top: 33.6%;
+
+}
+
+.left{
+    justify-content: flex-start;
+    background: dodgerblue;
+    width: 20%;
+}
+
+.left a{
+    border-bottom: 1px solid black;
+    display: block;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 16px 20px;
+    font-size: 30px;
+    color: white;
+    transition: .5s;
+}
+
+.left a:hover{
+    background: red;
+    color: white;
+}
+
+.content{
+    width: 60%;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    margin: 1px 2px;
+}
+
+.border{
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.border p{
+    font-size: 20px;
+}
+
+audio{
+    outline: none;
+    margin-top:5px;
+}
+
+.right{
+    justify-content: flex-end;
+    background: dodgerblue;
+    width: 20%;
+}
+
+.reg h1{
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reg{
+    background: url('data:image/jpeg;base64,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'), no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -1.5%;
+}
+
+.reg input[type="text"], [type="password"]{
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.6);
+    margin-left: 30px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    transition: .7s;
+    outline: none;
+    border-radius: 10px;
+}
+
+::placeholder{
+    color: #f1f1f1;
+}
+
+.reg input[type="submit"]{
+    background: #4caf50;
+    color: white;
+    font-size: 18px;
+    width: 100px;
+    padding: 5px;
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 75px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.reg input[type="submit"]:hover{
+    background: indigo;
+}
+
+.reg a{
+    text-decoration: none;
+    color: white;
+    display:inline;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.reg a:hover{
+    color: red;
+}
+
+.reg .lost{
+    margin-left: 29px;
+}
+
+.social{
+    background: transparent;
+    height: auto;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.social img{
+    width: 250px;
+    margin-top: 5px;
+}
+
+.search{
+        margin-top: 25px;
+}
+
+.search input[type="search"]{
+    padding: 12px 20px 12px 40px;
+    background-color: white;
+    margin-top: 7px;
+    margin-left: 1px;
+    margin-bottom:2px;
+    border-radius: 6px;
+    background-image: url('https://html5css.ru/edithtm/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    width: 60%;
+    border: 1px solid black; 
+    transition: 1s;
+    outline: none;
+}
+
+.search input[type="search"]:focus{
+    width: 100%;
+}
+
+input[type="search"]::placeholder{
+    color: black;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    background: #ffffff;
+    flex-flow: row, wrap;
+    justify-content: space-between;
+}
+
+.flex .img{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.flex .img img{
+    margin: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.6;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.flex .img img:hover{
+    opacity: 1;
+    box-shadow: 9px 7px 9px 7px rgba(238, 26, 26, 0.3);
+    transform: scale(1.1);
+}
+
+.flex .img h1{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    transition: .5s;
+    margin-bottom: 5px;
+}
+
+.flex .img h1:hover{
+    font-size: 65px;
+    transform: scale(1.2);
+    color: dodgerblue;
+}
+
+@media (max-width:1000px){
+    .flex{
+        display: flex;
+        flex-flow: column, wrap;
+    }
+
+    .flex .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex .img h1{
+        font-size: 30px;
+    }
+
+    .flex .img h1:hover{
+        font-size: 35px;
+    }
+}
